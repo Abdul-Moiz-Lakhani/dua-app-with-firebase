@@ -1,0 +1,136 @@
+#topBar
+{
+    height: 3px;
+    border-radius: 0px;
+}
+
+#nav-bar
+{
+    top: 3px;
+}
+
+#nav-bar > a
+{
+    color: white;
+}
+
+#nav-bar > a:hover
+{
+    color: deepskyblue;
+}
+
+.margin-right-10
+{
+    margin-right: 10px;
+}
+
+.btnStyles
+{
+    cursor: pointer;
+}
+
+.btnStyles:hover
+{
+    color: deepskyblue;
+}
+
+.display-3
+{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 9vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 6px 6px 20px black;
+}
+
+.jumbotron
+{
+    height: 32vw;
+    background-size: cover;
+    background-image: url("images/duaImg.jpg");
+    border-radius: 0px;
+}
+
+.jumbotron > p
+{
+    color: black;
+}
+
+.jumbotron > hr
+{
+    background-color: white;
+    
+}
+
+.para
+{
+    margin-top: 200px;
+}
+.lead
+{
+    font-size: 24px;
+}
+
+blockquote
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+blockquote > h3
+{
+
+    line-height: 1.75em;
+}
+
+.carousel-control-next-icon
+{
+    color: red !important;
+}
+
+#footer
+{
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    height: 50px;
+    color: white;
+    padding-top: 12.5px;
+    padding-left: 20px;
+}
+
+#my-name
+{
+    font-style: italic;
+    color: deepskyblue;
+}
+
+#icons-list
+{
+    margin-top: -3px;
+}
+
+#icons-list > li
+{
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+#icons-list > li > img
+{
+    width: 30px;
+    height: 30px;
+}
+
+#signUpFormContainer
+{
+    width: 50% !important;
+}
+
+legend
+{
+    font-size: 4vh;
+    text-align: center;
+}
