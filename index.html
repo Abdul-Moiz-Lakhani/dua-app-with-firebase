@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
     crossorigin="anonymous">
@@ -26,26 +30,33 @@
   </div>
 
   <!-- NavBar -->
-  <nav id="nav-bar" class="navbar navbar-light bg-dark justify-content-between fixed-top">
+  <nav id="nav-bar" class="navbar navbar-light bg-dark justify-content-between fixed-top navbar-expand-lg">
     <a class="navbar-brand" href="index.html">DUA Application</a>
-    <form class="form-inline">
-      <button class="btn btn-outline-default my-2 my-sm-0 btnStyles margin-right-10" type="submit">SIGN UP</button>
-      <button class="btn btn-outline-default my-2 my-sm-0 btnStyles" type="submit">SIGN IN</button>
-    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div style="width: 100%">
+        <div class="navbar-nav btnStyles" style="float: right">
+          <a class="nav-item btn btn-outline-default my-2 my-sm-0 margin-right-10" type="submit" onclick="location = 'login.html'">SIGN UP <span class="sr-only">(current)</span></a>
+          <a class="nav-item btn btn-outline-default my-2 my-sm-0" type="submit">SIGN IN</a>
+        </div>
+      </div>
+    </div>
   </nav>
 
   <!-- Jumbotron -->
   <div class="jumbotron text-center">
     <h1 class="display-3">LET'S DO DUA</h1>
-    <p class="lead para">Among the beauties of Islam is that you make Dua for your Brothers and Sisters in Islam without knowing them
-      <br> and in return the angels make Dua for You</p>
+    <p class="lead jumbotron-para">Among the beauties of Islam is that you make Dua for your Brothers and Sisters in Islam without knowing them
+      <br id="breakLineOff"> and in return the angels make Dua for You</p>
     <hr class="my-4">
-    <p>An Free Online Platform To Make Dua For The People Who Need Your Kind Words</p>
+    <p class="jumbotron-para2">An Free Online Platform To Make Dua For The People Who Need Your Kind Words</p>
   </div>
 
   <!-- Quotes Slide Display -->
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="text-align: center;">
-    <h4>Allah Almighty says in the Qur'an:</h4>
+  <div id="quoteSlider" class="carousel slide" data-ride="carousel" style="text-align: center;">
+    <h4 id="heading-before-slider">Allah Almighty says in the Qur'an:</h4>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <br>
@@ -110,12 +121,12 @@
   <!-- Footer -->
   <footer id="footer" class="fixed-bottom container-fluid">
     <div id="footer-container" class="row">
-      <div class="col-6">
+      <div id="footer-line-1" class="col-12 col-xs-12">
         <span>Designed &amp Developed by:
-          <span id="my-name">Abdul Moiz Lakhani</span>
+          <br id="breakLine"><span id="my-name">Abdul Moiz Lakhani</span>
         </span>
       </div>
-      <div class="col-6">
+      <div id="footer-icons" class="col-12 col-xs-12">
         <ul id="icons-list" class="text-right">
           <li>
             <a href="https://github.com/Abdul-Moiz-Lakhani">

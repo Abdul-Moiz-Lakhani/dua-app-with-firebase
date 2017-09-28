@@ -19,19 +19,22 @@
     color: deepskyblue;
 }
 
-.margin-right-10
+/* .margin-right-10
 {
     margin-right: 10px;
+} */
+
+.btnStyles > a
+{
+    background: white;
+    border-radius: 7px;
+    outline: none;
 }
 
-.btnStyles
+.btnStyles > a:hover
 {
     cursor: pointer;
-}
-
-.btnStyles:hover
-{
-    color: deepskyblue;
+    color: deepskyblue !important;
 }
 
 .display-3
@@ -52,6 +55,7 @@
     background-size: cover;
     background-image: url("images/duaImg.jpg");
     border-radius: 0px;
+    transition: all 1s ease-in-out;
 }
 
 .jumbotron > p
@@ -62,43 +66,41 @@
 .jumbotron > hr
 {
     background-color: white;
-    
 }
 
-.para
+.jumbotron-para
 {
-    margin-top: 200px;
+    margin-top: 14%;
+    font-size: 1.75vw;
 }
-.lead
+
+.jumbotron-para2
 {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 blockquote
 {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    transition: all 1s ease-in-out;
 }
 
 blockquote > h3
 {
-
-    line-height: 1.75em;
-}
-
-.carousel-control-next-icon
-{
-    color: red !important;
+    
+    line-height: 3vw;
 }
 
 #footer
 {
-    background-color: rgb(10, 10, 10);
+    background-color: #17191B;
     width: 100%;
     height: 50px;
     color: white;
     padding-top: 12.5px;
     padding-left: 20px;
+    transition: all 1s ease-in-out;
 }
 
 #my-name
@@ -133,4 +135,239 @@ legend
 {
     font-size: 4vh;
     text-align: center;
+}
+
+#breakLine
+{
+    display: none;
+}
+
+#breakLineOff
+{
+    display: none;
+}
+
+.navbar-light .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); } 
+.navbar-light .navbar-toggler { border-color: white}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px)
+{
+    .btnStyles
+    {
+        padding-top: 10px;
+        width: 100%;
+        color: deepskyblue;
+    }
+
+    .display-3
+    {
+        top: 12.5%;
+        text-shadow: 3px 3px 10px black;
+        font-size: 12vw;
+    }
+
+    .jumbotron
+    {
+        height: 90vw;
+    }
+
+    .jumbotron-para
+    {
+        margin-top: 32%;
+        font-size: 4.75vw;
+    }
+    
+    .jumbotron > hr
+    {
+        margin-top: 2% !important;
+        margin-bottom: 3% !important;    
+        background-color: white;
+    }
+
+    .jumbotron-para2
+    {
+        font-size: 4.25vw;
+    }
+
+    #breakLineOff
+    {
+        display: none;
+    }
+
+    #quoteSlider
+    {
+        margin-top: -22px;
+    }
+
+    #quoteSlider > h4
+    {
+        font-size: 18px;
+    }
+
+    blockquote
+    {
+        margin-bottom: -100px;
+        margin: auto;
+        width: 90%;
+    }
+
+    blockquote > h3
+    {
+        line-height: 7vw;
+        font-size: 5vw;
+    }
+
+    blockquote > h5
+    {
+        font-size: 5vw;
+    }
+
+    .carousel-inner
+    {
+        top: -22px;
+    }
+
+    #footer
+    {
+        height: 120px;
+        color: white;
+        padding-top: 12.5px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    
+    #breakLine
+    {
+        display: block;
+    }
+
+    #icons-list
+    {
+        margin-top: 10px;
+        padding-right: 75px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) and (max-width: 767px)
+{
+    .btnStyles
+    {
+        padding-top: 10px;
+        width: 100%;
+        color: deepskyblue;
+    }
+
+    .display-3
+    {
+        top: 12.5%;
+        text-shadow: 3px 3px 10px black;
+        font-size: 12vw;
+    }
+
+    .jumbotron
+    {
+        height: 90vw;
+    }
+
+    .jumbotron-para
+    {
+        margin-top: 32%;
+        font-size: 4.75vw;
+    }
+    
+    .jumbotron > hr
+    {
+        margin-top: 2% !important;
+        margin-bottom: 3% !important;    
+        background-color: white;
+    }
+
+    .jumbotron-para2
+    {
+        font-size: 4.25vw;
+    }
+
+    #breakLineOff
+    {
+        display: none;
+    }
+
+    #quoteSlider
+    {
+        margin-top: -22px;
+    }
+
+    #quoteSlider > h4
+    {
+        font-size: 18px;
+    }
+
+    blockquote
+    {
+        margin-bottom: -100px;
+        margin: auto;
+        width: 90%;
+    }
+
+    blockquote > h3
+    {
+        line-height: 7vw;
+        font-size: 15px;
+    }
+
+    blockquote > h5
+    {
+        font-size: 15px;
+    }
+
+    .carousel-inner
+    {
+        top: -22px;
+    }
+
+    #footer
+    {
+        height: 35px;
+        color: white;
+        padding-top: 6px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    #breakLine
+    {
+        display: none;
+    }
+
+    #icons-list
+    {
+        margin-top: -25px;
+        padding-right: 0px;
+    }
+
+    #icons-list > li > a > img
+    {
+        width: 25px !important;
+        height: 25px !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px)
+{
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
+    
 }
