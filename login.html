@@ -68,7 +68,7 @@
 
     <!-- Sign In Form -->
     <div id="signInFormContainer" class="container">
-      <form>
+      <form action="javascript:void(0)">
         <legend>SIGN IN</legend>
         <div class="form-group">
           <label for="signInEmail">Email Address</label>
@@ -79,7 +79,8 @@
           <label for="signInPass">Password</label>
           <input type="password" class="form-control" id="signInPass" placeholder="Password">
         </div>
-        <button type="submit" onclick="signUp()" class="btn btn-primary float-right">SIGN UP</button>
+        <button id="wantNewAccountBtn" type="button" class="btn btn-primary optionalFormBtn" onclick="location = 'signUp.html'">I WANT TO CREATE AN ACCOUNT</button>
+        <button id="signInBtn" type="submit" onclick="login()" class="btn btn-primary float-right">SIGN IN</button>
     </div>
     </form>
   </div>
