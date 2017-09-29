@@ -1,3 +1,5 @@
+/* Index/Front Page */
+
 #topBar
 {
     height: 3px;
@@ -24,6 +26,7 @@
     background: white;
     border-radius: 7px;
     outline: none;
+    color: black;
 }
 
 .btnStyles > a:hover
@@ -121,17 +124,6 @@ blockquote > h3
     height: 30px;
 }
 
-#signUpFormContainer
-{
-    width: 50% !important;
-}
-
-legend
-{
-    font-size: 4vh;
-    text-align: center;
-}
-
 .breakLine
 {
     display: none;
@@ -140,6 +132,23 @@ legend
 .breakLineOff
 {
     display: none;
+}
+
+/* Sign Up Form CSS */
+#form-container-div
+{
+    overflow: scroll;
+}
+
+#signUpFormContainer
+{
+    margin-top: -1vh;
+}
+
+legend
+{
+    font-size: 4vh;
+    text-align: center;
 }
 
 .navbar-light .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); } 
@@ -241,6 +250,29 @@ legend
         padding: 0;
         text-align: center !important;
         margin-top: 10px;
+    }
+    
+    /* Sign Up Form */
+    #signUpFormContainer
+    {
+        width: 92% !important;
+        margin-bottom: 55vw;
+    }
+
+    #signUpBtn
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #alreadyAccountBtn
+    {
+        width: 100%;
+    }
+
+    legend
+    {
+        font-size: 7vw;
     }
 }
 
@@ -352,6 +384,18 @@ legend
     {
         width: 25px !important;
         height: 25px !important;
+    }
+
+    /* Sign Up Form */
+    #signUpFormContainer
+    {
+        width: 70% !important; 
+        height: 72vw !important;
+    }
+
+    legend
+    {
+        font-size: 4vw;
     }
 }
 
@@ -467,6 +511,13 @@ legend
         width: 35px !important;
         height: 35px !important;
     }
+
+    /* Sign Up Form */
+    #signUpFormContainer
+    {
+        width: 70% !important; 
+        height: 70vw !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -580,78 +631,17 @@ legend
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px)
 {
-    /* 
-    .display-3
-    {
-        top: 11%;
-        font-size: 11vw;
-    }
-
-    .jumbotron
-    {
-        height: 39vw;
-    }
-
-    .jumbotron-para
-    {
-        margin: auto;
-        width: 92%;
-        margin-top: 25vh;
-        font-size: 3.25vh;
-    }
-
-    .jumbotron-para2
-    {
-        font-size: 3vh;
-    }
-
-    .breakLineOff
-    {
-        display: block;
-    }
-
-    #quoteSlider > h4
-    {
-        font-size: 3.5vw;
-    }
-
     blockquote
     {
         margin: auto;
         width: 85%;
     }
 
-    blockquote > h3
-    {
-        line-height: 5.5vw;
-        font-size: 3.4vw;
-    }
-
-    blockquote > h5
-    {
-        margin-top: 1%;
-        font-size: 3.25vw;
-    }
-
-    .carousel-inner
-    {
-        top: 0vw;
-    }
-
-    .breakLine
-    {
-        display: block;
-    }
-
-    .breakLineOff
-    {
-        display: none;
-    } */
     .margin-right-10
     {
         margin-right: 10px;
     }
-    
+
     #icons-list
     {
         margin-top: -25px;
