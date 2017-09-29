@@ -263,12 +263,12 @@ legend
 
     .jumbotron
     {
-        height: 46vw;
+        height: 48vw;
     }
 
     .jumbotron-para
     {
-        margin-top: 21%;
+        margin-top: 33vh;
         font-size: 3vw;
     }
     
@@ -281,7 +281,7 @@ legend
     
     .jumbotron-para2
     {
-        font-size: 2.5vw;
+        font-size: 2.4vw;
     }
 
     .breakLineOff
@@ -377,25 +377,25 @@ legend
 
     .jumbotron
     {
-        height: 46vw;
+        height: 72vw;
     }
 
     .jumbotron-para
     {
-        margin-top: 18%;
-        font-size: 3vw;
+        margin-top: 21%;
+        font-size: 4vw;
     }
     
     .jumbotron > hr
     {
-        margin-top: 3% !important;
-        margin-bottom: 2% !important;    
+        margin-top: 4% !important;
+        margin-bottom: 4% !important;    
         background-color: white;
     }
     
     .jumbotron-para2
     {
-        font-size: 2vw;
+        font-size: 3.75vw;
     }
 
     .breakLineOff
@@ -405,7 +405,7 @@ legend
 
     #quoteSlider > h4
     {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 
     blockquote
@@ -417,14 +417,14 @@ legend
 
     blockquote > h3
     {
-        line-height: 5vw;
-        font-size: 3vw;
+        line-height: 6.25vw;
+        font-size: 4.25vw;
     }
 
     blockquote > h5
     {
         margin-top: 1%;
-        font-size: 3.5vw;
+        font-size: 3.75vw;
     }
 
     .carousel-inner
@@ -441,16 +441,219 @@ legend
     {
         display: none;
     }
+
+    #footer
+    {
+        height: 120px;
+        color: white;
+        padding-top: 12.5px;
+        text-align: center;
+    }
+
+    #footer-line-1
+    {
+        font-size: 3.5vw;
+    }
+
+    #icons-list
+    {
+        padding: 0;
+        text-align: center !important;
+        margin-top: 10px;
+    }
+
+    #icons-list > li > a > img
+    {
+        width: 35px !important;
+        height: 35px !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px)
 {
+    .margin-right-10
+    {
+        margin-right: 10px;
+    }
+
+    .display-3
+    {
+        top: 8%;
+        font-size: 11vw;
+    }
+
+    .jumbotron
+    {
+        height: 53vh;
+    }
+
+    .jumbotron-para
+    {
+        margin-top: 19vw;
+        font-size: 3.25vh;
+    }
     
+    .jumbotron > hr
+    {
+        margin-top: 4% !important;
+        margin-bottom: 4% !important;    
+        background-color: white;
+    }
+    
+    .jumbotron-para2
+    {
+        font-size: 2.75vh;
+    }
+
+    .breakLineOff
+    {
+        display: none;
+    }
+
+    #quoteSlider > h4
+    {
+        font-size: 4.5vw;
+    }
+
+    blockquote
+    {
+        margin-bottom: -100px;
+        margin: auto;
+        width: 90%;
+    }
+
+    blockquote > h3
+    {
+        line-height: 6.25vw;
+        font-size: 4.25vw;
+    }
+
+    blockquote > h5
+    {
+        margin-top: 1%;
+        font-size: 3.75vw;
+    }
+
+    .carousel-inner
+    {
+        top: 0vw;
+    }
+
+    .breakLine
+    {
+        display: block;
+    }
+
+    .breakLineOff
+    {
+        display: none;
+    }
+
+    #footer
+    {
+        height: 13.75%;
+        color: white;
+        padding-top: 12.5px;
+        text-align: center;
+    }
+
+    #footer-line-1
+    {
+        font-size: 3.25vh;
+    }
+
+    #icons-list
+    {
+        padding: 0;
+        text-align: center !important;
+        margin-top: 16px;
+    }
+
+    #icons-list > li > a > img
+    {
+        width: 5vh !important;
+        height: 5vh !important;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px)
 {
+    /* 
+    .display-3
+    {
+        top: 11%;
+        font-size: 11vw;
+    }
+
+    .jumbotron
+    {
+        height: 39vw;
+    }
+
+    .jumbotron-para
+    {
+        margin: auto;
+        width: 92%;
+        margin-top: 25vh;
+        font-size: 3.25vh;
+    }
+
+    .jumbotron-para2
+    {
+        font-size: 3vh;
+    }
+
+    .breakLineOff
+    {
+        display: block;
+    }
+
+    #quoteSlider > h4
+    {
+        font-size: 3.5vw;
+    }
+
+    blockquote
+    {
+        margin: auto;
+        width: 85%;
+    }
+
+    blockquote > h3
+    {
+        line-height: 5.5vw;
+        font-size: 3.4vw;
+    }
+
+    blockquote > h5
+    {
+        margin-top: 1%;
+        font-size: 3.25vw;
+    }
+
+    .carousel-inner
+    {
+        top: 0vw;
+    }
+
+    .breakLine
+    {
+        display: block;
+    }
+
+    .breakLineOff
+    {
+        display: none;
+    } */
+    .margin-right-10
+    {
+        margin-right: 10px;
+    }
     
+    #icons-list
+    {
+        margin-top: -25px;
+    }
 }
