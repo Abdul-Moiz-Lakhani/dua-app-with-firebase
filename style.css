@@ -19,11 +19,6 @@
     color: deepskyblue;
 }
 
-/* .margin-right-10
-{
-    margin-right: 10px;
-} */
-
 .btnStyles > a
 {
     background: white;
@@ -137,12 +132,12 @@ legend
     text-align: center;
 }
 
-#breakLine
+.breakLine
 {
     display: none;
 }
 
-#breakLineOff
+.breakLineOff
 {
     display: none;
 }
@@ -190,7 +185,7 @@ legend
         font-size: 4.25vw;
     }
 
-    #breakLineOff
+    .breakLineOff
     {
         display: none;
     }
@@ -209,7 +204,7 @@ legend
     {
         margin-bottom: -100px;
         margin: auto;
-        width: 90%;
+        width: 92%;
     }
 
     blockquote > h3
@@ -225,7 +220,7 @@ legend
 
     .carousel-inner
     {
-        top: -22px;
+        top: -4vh;
     }
 
     #footer
@@ -233,23 +228,23 @@ legend
         height: 120px;
         color: white;
         padding-top: 12.5px;
-        padding-left: 20px;
         text-align: center;
     }
     
-    #breakLine
+    .breakLine
     {
         display: block;
     }
 
     #icons-list
     {
+        padding: 0;
+        text-align: center !important;
         margin-top: 10px;
-        padding-right: 75px;
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 568px and up) */
 @media (min-width: 568px) and (max-width: 767px)
 {
     .btnStyles
@@ -261,35 +256,35 @@ legend
 
     .display-3
     {
-        top: 12.5%;
+        top: 20%;
         text-shadow: 3px 3px 10px black;
         font-size: 12vw;
     }
 
     .jumbotron
     {
-        height: 90vw;
+        height: 46vw;
     }
 
     .jumbotron-para
     {
-        margin-top: 32%;
-        font-size: 4.75vw;
+        margin-top: 21%;
+        font-size: 3vw;
     }
     
     .jumbotron > hr
     {
-        margin-top: 2% !important;
-        margin-bottom: 3% !important;    
+        margin-top: -2% !important;
+        margin-bottom: 1.5% !important;    
         background-color: white;
     }
-
+    
     .jumbotron-para2
     {
-        font-size: 4.25vw;
+        font-size: 2.5vw;
     }
 
-    #breakLineOff
+    .breakLineOff
     {
         display: none;
     }
@@ -313,7 +308,7 @@ legend
 
     blockquote > h3
     {
-        line-height: 7vw;
+        line-height: 4vw;
         font-size: 15px;
     }
 
@@ -324,7 +319,7 @@ legend
 
     .carousel-inner
     {
-        top: -22px;
+        top: -30px;
     }
 
     #footer
@@ -336,7 +331,12 @@ legend
         text-align: left;
     }
 
-    #breakLine
+    .breakLine
+    {
+        display: block;
+    }
+
+    .breakLineOff
     {
         display: none;
     }
@@ -345,6 +345,7 @@ legend
     {
         margin-top: -25px;
         padding-right: 0px;
+        text-align: right !important;
     }
 
     #icons-list > li > a > img
@@ -357,7 +358,89 @@ legend
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px)
 {
+    .display-3
+    {
+        font-size: 11vw;
+    }
+
+    .btnStyles
+    {
+        padding-top: 10px;
+        width: 100%;
+        color: deepskyblue;
+    }
+
+    .btnStyles > a
+    {
+        margin-top: 10px;
+    }
+
+    .jumbotron
+    {
+        height: 46vw;
+    }
+
+    .jumbotron-para
+    {
+        margin-top: 18%;
+        font-size: 3vw;
+    }
     
+    .jumbotron > hr
+    {
+        margin-top: 3% !important;
+        margin-bottom: 2% !important;    
+        background-color: white;
+    }
+    
+    .jumbotron-para2
+    {
+        font-size: 2vw;
+    }
+
+    .breakLineOff
+    {
+        display: none;
+    }
+
+    #quoteSlider > h4
+    {
+        font-size: 4vw;
+    }
+
+    blockquote
+    {
+        margin-bottom: -100px;
+        margin: auto;
+        width: 90%;
+    }
+
+    blockquote > h3
+    {
+        line-height: 5vw;
+        font-size: 3vw;
+    }
+
+    blockquote > h5
+    {
+        margin-top: 1%;
+        font-size: 3.5vw;
+    }
+
+    .carousel-inner
+    {
+        top: -2vw;
+    }
+
+    .breakLine
+    {
+        display: block;
+    }
+
+    .breakLineOff
+    {
+        display: none;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
