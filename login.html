@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
     crossorigin="anonymous">
@@ -10,48 +14,105 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <!-- Firebase Connection -->
-  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
   <script>
     // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC_Ie96qBH3ETHD7OjrhPMFFHGzJe8-UCM",
+      authDomain: "to-do-app-dbff5.firebaseapp.com",
+      databaseURL: "https://to-do-app-dbff5.firebaseio.com",
+      projectId: "to-do-app-dbff5",
+      storageBucket: "to-do-app-dbff5.appspot.com",
+      messagingSenderId: "414914975580"
+    };
+    firebase.initializeApp(config);
   </script>
+  
   <title>Dua App</title>
 </head>
 
 <body>
 
   <!-- Top Bar -->
-  <div id="topBar" class="progress">
+  <div id="topBar" class="progress fixed-top">
     <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
       aria-valuemax="100"></div>
   </div>
 
-  <!-- Jumbotron -->
-  <div class="jumbotron">
-    <h1 class="display-3">DUA APP</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
+  <!-- NavBar -->
+  <nav id="nav-bar" class="navbar navbar-light bg-dark justify-content-between fixed-top navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">DUA Application</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div style="width: 100%">
+        <div class="navbar-nav btnStyles" style="float: right">
+          <a class="nav-item btn btn-outline-default my-2 my-sm-0 margin-right-10" type="submit" onclick="location = 'signUp.html'">SIGN UP <span class="sr-only">(current)</span></a>
+          <a class="nav-item btn btn-outline-default my-2 my-sm-0" type="submit" onclick="location = 'login.html'">SIGN IN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="form-container-div">
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <h1 class="display-3">LET'S DO DUA</h1>
+      <p class="lead jumbotron-para">Among the beauties of Islam is that you make Dua for your Brothers and Sisters in Islam without knowing them
+        <br class="breakLineOff"> and in return the angels make Dua for You</p>
+      <hr class="my-4">
+      <p class="jumbotron-para2">An Free Online Platform To Make Dua For The People Who Need Your Kind Words</p>
+    </div>
+
+    <!-- Sign In Form -->
+    <div id="signInFormContainer" class="container">
+      <form>
+        <legend>SIGN IN</legend>
+        <div class="form-group">
+          <label for="signInEmail">Email Address</label>
+          <input type="email" class="form-control" id="signInEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="signInPass">Password</label>
+          <input type="password" class="form-control" id="signInPass" placeholder="Password">
+        </div>
+        <button type="submit" onclick="signUp()" class="btn btn-primary float-right">SIGN UP</button>
+    </div>
+    </form>
   </div>
 
-  <!-- Sign In Form -->
-  <div id="signUpFormContainer" class="container">
-    <form>
-      <legend>SIGN IN</legend>
-      <div class="form-group">
-        <label for="signInEmail">Email Address</label>
-        <input type="email" class="form-control" id="signInEmail" aria-describedby="emailHelp" placeholder="Enter Email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  <!-- Footer -->
+  <footer id="footer" class="fixed-bottom container-fluid">
+    <div id="footer-container" class="row">
+      <div id="footer-line-1" class="col-lg-12 col-md-12 col-xs-12">
+        <span>Designed &amp Developed by:
+          <br class="breakLineOff breakLine"><span id="my-name">Abdul Moiz Lakhani</span>
+        </span>
       </div>
-      <div class="form-group">
-        <label for="signInPass">Password</label>
-        <input type="password" class="form-control" id="signInPass" placeholder="Password">
+      <div id="footer-icons" class="col-lg-12 col-md-12 col-xs-12">
+        <ul id="icons-list" class="text-right">
+          <li>
+            <a href="https://github.com/Abdul-Moiz-Lakhani">
+              <img src="icons/github.png" alt="github">
+            </a>
+          </li>
+          <li>
+            <a href="https://pk.linkedin.com/in/abdulmoizlakhani">
+              <img src="icons/linkedin.png" alt="linkedIn">
+            </a>
+          </li>
+          <li style="margin-right: 10px">
+            <a href="#">
+              <img src="icons/stackof.png" alt="stackoverflow">
+            </a>
+          </li>
+        </ul>
       </div>
-      <button type="submit" onclick="signUp()" class="btn btn-primary float-right">SIGN UP</button>
-  </div>
-  </form>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

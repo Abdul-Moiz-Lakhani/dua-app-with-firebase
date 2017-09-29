@@ -14,10 +14,20 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <!-- Firebase Connection -->
-  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
   <script>
     // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC_Ie96qBH3ETHD7OjrhPMFFHGzJe8-UCM",
+      authDomain: "to-do-app-dbff5.firebaseapp.com",
+      databaseURL: "https://to-do-app-dbff5.firebaseio.com",
+      projectId: "to-do-app-dbff5",
+      storageBucket: "to-do-app-dbff5.appspot.com",
+      messagingSenderId: "414914975580"
+    };
+    firebase.initializeApp(config);
   </script>
+  
   <title>Dua App</title>
 </head>
 
@@ -32,7 +42,8 @@
   <!-- NavBar -->
   <nav id="nav-bar" class="navbar navbar-light bg-dark justify-content-between fixed-top navbar-expand-lg">
     <a class="navbar-brand" href="index.html">DUA Application</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -64,7 +75,7 @@
           <blockquote>
             <h3>"When my servants ask you concerning me, <br class="breakLine"> (tell them) I am indeed close (to them).
               <br> I listen to the prayer of every suppliant when he calls on me."</h3>
-              <h5>(Quran 2:186)</h5>
+            <h5>(Quran 2:186)</h5>
           </blockquote>
         </div>
       </div>
@@ -72,7 +83,8 @@
         <br>
         <div class="d-block w-100">
           <blockquote>
-            <h3> “O mankind! It is you who stand as beggars in your relation to Allah, <br> and it is Allah Who is Free of all wants, Worthy of all praise.”</h3>
+            <h3> “O mankind! It is you who stand as beggars in your relation to Allah, <br> and it is Allah Who is Free of all
+              wants, Worthy of all praise.”</h3>
             <h5>(Verses, 35:15)</h5>
           </blockquote>
         </div>
@@ -81,7 +93,8 @@
         <br>
         <div class="d-block w-100">
           <blockquote>
-            <h3>“Call upon Allah, or call upon Rahman: <br class="breakLine"> By whatever name you call upon Him,<br class="breakLine">(it is well): <br class="breakLineOff"> For to Him belong the Most Beautiful Names. </h3>
+            <h3>“Call upon Allah, or call upon Rahman: <br class="breakLine"> By whatever name you call upon Him,<br class="breakLine">(it
+              is well): <br class="breakLineOff"> For to Him belong the Most Beautiful Names. </h3>
             <h5>(Sureh.17: Ayat 110)</h5>
           </blockquote>
         </div>

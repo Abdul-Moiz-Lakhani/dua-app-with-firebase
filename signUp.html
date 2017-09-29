@@ -14,11 +14,21 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <!-- Firebase Connection -->
-  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
   <script>
     // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC_Ie96qBH3ETHD7OjrhPMFFHGzJe8-UCM",
+      authDomain: "to-do-app-dbff5.firebaseapp.com",
+      databaseURL: "https://to-do-app-dbff5.firebaseio.com",
+      projectId: "to-do-app-dbff5",
+      storageBucket: "to-do-app-dbff5.appspot.com",
+      messagingSenderId: "414914975580"
+    };
+    firebase.initializeApp(config);
   </script>
-  <title>Dua App</title>
+
+  <title>Dua App - Sign Up</title>
 </head>
 
 <body>
@@ -32,7 +42,8 @@
   <!-- NavBar -->
   <nav id="nav-bar" class="navbar navbar-light bg-dark justify-content-between fixed-top navbar-expand-lg">
     <a class="navbar-brand" href="index.html">DUA Application</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -45,38 +56,39 @@
     </div>
   </nav>
 
-    <div id="form-container-div">
-        <!-- Jumbotron -->
-        <div class="jumbotron text-center">
-            <h1 class="display-3">LET'S DO DUA</h1>
-            <p class="lead jumbotron-para">Among the beauties of Islam is that you make Dua for your Brothers and Sisters in Islam without knowing them
-            <br class="breakLineOff"> and in return the angels make Dua for You</p>
-            <hr class="my-4">
-            <p class="jumbotron-para2">An Free Online Platform To Make Dua For The People Who Need Your Kind Words</p>
-        </div>
-
-        <!-- Sign Up Form -->
-        <div id="signUpFormContainer" class="container">
-            <form>
-            <legend>SIGN UP</legend>
-            <div class="form-group">
-                <label for="user-name">User Name</label>
-                <input type="text" class="form-control" id="user-name" placeholder="Enter Your Name">
-            </div>
-            <div class="form-group">
-                <label for="signUpEmail">Email Address</label>
-                <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp" placeholder="Enter Email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="signUpPass">Password</label>
-                <input type="password" class="form-control" id="signUpPass" placeholder="Password">
-            </div>
-            <button id="alreadyAccountBtn" type="button" class="btn btn-primary" onclick="()=>{location = 'login.html'}">I ALREADY HAVE AN ACCOUNT</button>
-            <button id="signUpBtn" type="submit" onclick="signUp()" class="btn btn-primary float-right">SIGN UP</button>
-        </div>
-        </form>
+  <div id="form-container-div">
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <h1 class="display-3">LET'S DO DUA</h1>
+      <p class="lead jumbotron-para">Among the beauties of Islam is that you make Dua for your Brothers and Sisters in Islam without knowing them
+        <br class="breakLineOff"> and in return the angels make Dua for You</p>
+      <hr class="my-4">
+      <p class="jumbotron-para2">An Free Online Platform To Make Dua For The People Who Need Your Kind Words</p>
     </div>
+
+    <!-- Sign Up Form -->
+    <div id="signUpFormContainer" class="container">
+      <form>
+        <legend>SIGN UP</legend>
+        <div class="form-group">
+          <label for="user-name">User Name</label>
+          <input type="text" class="form-control" id="UserNameInput" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+          <label for="signUpEmail">Email Address</label>
+          <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="signUpPass">Password</label>
+          <input type="password" class="form-control" id="signUpPass" placeholder="Password">
+        </div>
+        <button id="alreadyAccountBtn" type="button" class="btn btn-primary" onclick="()=>{location = 'login.html'}">I ALREADY HAVE AN ACCOUNT</button>
+        <button id="signUpBtn" type="submit" onclick="signUp()" class="btn btn-primary float-right">SIGN UP</button>
+    </div>
+    </form>
+  </div>
+
   <!-- Footer -->
   <footer id="footer" class="fixed-bottom container-fluid">
     <div id="footer-container" class="row">

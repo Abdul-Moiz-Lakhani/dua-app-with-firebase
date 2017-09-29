@@ -274,6 +274,13 @@ legend
     {
         font-size: 7vw;
     }
+
+    /* Sign In Form */
+    #signInFormContainer
+    {
+        width: 92% !important;
+        margin-bottom: 58vw;
+    }
 }
 
 /* Small devices (landscape phones, 568px and up) */
@@ -396,6 +403,13 @@ legend
     legend
     {
         font-size: 4vw;
+    }
+
+    /* Sign In Form */
+    #signInFormContainer
+    {
+        width: 70% !important;
+        margin-bottom: 18vw !important;
     }
 }
 
@@ -632,7 +646,14 @@ legend
     {
         width: 90% !important; 
         height: 45vw !important;
-    }   
+    }
+    
+    /* Sign In Form */
+    #signInFormContainer
+    {
+        width: 90% !important; 
+        height: 25vw !important;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -659,5 +680,12 @@ legend
     {
         width: 90% !important; 
         height: 36vw !important;
+    }
+
+    /* Sign In Form */
+    #signInFormContainer
+    {
+        width: 90% !important; 
+        height: 25vw !important;
     }
 }
