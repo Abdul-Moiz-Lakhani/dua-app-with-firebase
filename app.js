@@ -18,6 +18,7 @@ function signUp() {
             email: email,
         }
         console.log(currentUser.name);
+        database.ref().child('users').push(currentUser);
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
         location = 'login.html';
     })

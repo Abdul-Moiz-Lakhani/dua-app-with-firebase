@@ -28,7 +28,7 @@
     firebase.initializeApp(config);
   </script>
 
-  <title>Dua App</title>
+  <title>Dua App - Home Page</title>
 </head>
 
 <body>
@@ -78,18 +78,18 @@
           <h6 id="welcome-heading">Welcome,</h6>
           <h5 id="welcome"></h5>
 
-          <h6 id="welcome-heading">Email:</h6>
+          <h6 id="welcome-heading">Email Address:</h6>
           <h5 id="userEmailAddress"></h5>
 
         </div>
       </div>
       <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12" id="dua-posting-area">
-        <div class="card text-white" id="newDuaConatainer">
+        <div class="card" id="newDuaConatainer">
           <div class="card-header">Create New Dua</div>
           <div class="card-body">
             <div class="form-group">
               <div>
-                <input type="text" class="form-control" placeholder="Description" id="sender" required autofocus>
+                <input type="text" class="form-control" placeholder="For whom this dua is for? Write name of that person." id="sender" required autofocus>
                 <textarea class="form-control" rows="5" placeholder="Enter Dua Here" id="commentBox" required></textarea>
                 <button type="button" class="btn btn-primary btn-block" id="postBtn" onclick="submit()">Post</button>
               </div>

@@ -12,12 +12,13 @@ userEmailAdd.innerHTML = user.email;
 
 function submit() {
     var post = {
-        sender: sender.value,
+        sender: user.name,
+        duaFor: sender.value,
         dua: comment.value
     }
     sender.value = '';
     comment.value = '';
-
+    
     database.child('posts').push(post);
 }
 
