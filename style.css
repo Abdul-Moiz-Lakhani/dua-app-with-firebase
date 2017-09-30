@@ -21,7 +21,7 @@
     color: deepskyblue;
 }
 
-.btnStyles > a
+.btnStyles > a, .SignOutBtnStyles
 {
     background: white;
     border-radius: 7px;
@@ -29,7 +29,7 @@
     color: black;
 }
 
-.btnStyles > a:hover
+.btnStyles > a:hover, .SignOutBtnStyles:hover
 {
     cursor: pointer;
     color: deepskyblue !important;
@@ -116,6 +116,7 @@ blockquote > h3
 {
     display: inline;
     margin: 0 0 0 10px;
+    transition: all 1s ease-in-out;
 }
 
 #icons-list > li > img
@@ -135,14 +136,10 @@ blockquote > h3
 }
 
 /* Sign Up Form CSS */
-#form-container-div
-{
-    overflow: scroll;
-}
-
 #signUpFormContainer
 {
     margin-top: -1vh;
+    transition: all 1s ease-in-out;
 }
 
 legend
@@ -151,9 +148,113 @@ legend
     text-align: center;
 }
 
-.optionalFormBtn
+.optionalFormBtn, #signUpBtn
 {
     cursor: pointer;
+}
+
+/* Home Page */
+#navbarLinks > ul > li > a
+{
+    color: lightgray;
+}
+
+#navbarLinks > ul > li.active
+{
+    border: 1px solid deepskyblue !important;
+    border-radius: 10px;
+    transition: all 1s linear;
+}
+
+#dua-form-container
+{
+    /* border: 1px solid red; */
+    margin-bottom: 80px;
+    height: 350px;
+    width: 90%;
+    transition: all 1s ease-in-out;
+}
+
+#userContainer
+{
+    height: inherit;
+    transition: all 1s ease-in-out;
+}
+
+#user-profile
+{
+    padding: 0 7.5px 0 0;
+    transition: all 1s ease-in-out;
+    /* border: 1px solid red; */
+}
+
+#dua-posting-area
+{
+    padding: 0 0 0 7.5px;
+    transition: all 1s ease-in-out;
+    /* border: 1px solid red; */    
+}
+
+#profile-container
+{
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 3px 3px 5px lightgray;
+    transition: all 1s ease-in-out;
+}
+
+#newDuaConatainer
+{
+    height: 100%;
+    border: 1px solid white;
+    background-color: rgb(250, 250, 250);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px lightgray;
+    transition: all 1s ease-in-out;
+}
+
+.card-header
+{
+    border-radius: 15px 15px 0 0 !important;
+    color: deepskyblue;
+    transition: all 1s ease-in-out;
+}
+
+#welcome-heading
+{
+    margin: 15px 0 0 15px;
+    transition: all 1s ease-in-out;
+}
+
+#welcome, #userEmailAddress
+{
+    margin: 10px 0 0 15px;
+    color: deepskyblue;
+    transition: all 1s ease-in-out;
+}
+
+#sender
+{
+    margin-bottom: 15px;
+    transition: all 1s ease-in-out;
+}
+
+#commentBox
+{
+    height: 10vw;
+    transition: all 1s ease-in-out;
+}
+
+#postBtn
+{
+    margin-top: 15px;
+    background-color: deepskyblue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
 .navbar-light .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); } 
@@ -286,6 +387,30 @@ legend
         width: 92% !important;
         margin-bottom: 58vw;
     }
+
+    /* Home page */
+    #profile-container
+    {
+        padding-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    #user-profile
+    {
+        padding: 0;
+    }
+
+    #dua-posting-area
+    {
+        margin-top: 15px;
+        padding: 0;
+        margin-bottom: 140px;
+    }
+
+    #commentBox
+    {
+        height: 35vw;
+    }
 }
 
 /* Small devices (landscape phones, 568px and up) */
@@ -416,6 +541,30 @@ legend
         width: 70% !important;
         margin-bottom: 18vw !important;
     }
+
+    /* Home page */
+    #profile-container
+    {
+        padding-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    #user-profile
+    {
+        padding: 0;
+    }
+
+    #dua-posting-area
+    {
+        margin-top: 15px;
+        padding: 0;
+        margin-bottom: 140px;
+    }
+
+    #commentBox
+    {
+        height: 35vw;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -536,6 +685,30 @@ legend
     {
         width: 70% !important; 
         height: 70vw !important;
+    }
+
+    /* Home page */
+    #profile-container
+    {
+        padding-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    #user-profile
+    {
+        padding: 0;
+    }
+
+    #dua-posting-area
+    {
+        margin-top: 15px;
+        padding: 0;
+        margin-bottom: 140px;
+    }
+
+    #commentBox
+    {
+        height: 35vw;
     }
 }
 
@@ -658,6 +831,30 @@ legend
     {
         width: 90% !important; 
         height: 25vw !important;
+    }
+
+    /* Home page */
+    #profile-container
+    {
+        padding-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    #user-profile
+    {
+        padding: 0;
+    }
+
+    #dua-posting-area
+    {
+        margin-top: 15px;
+        padding: 0;
+        margin-bottom: 220px;
+    }
+
+    #commentBox
+    {
+        height: 35vw;
     }
 }
 

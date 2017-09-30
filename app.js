@@ -17,6 +17,7 @@ function signUp() {
             name: name,
             email: email,
         }
+        console.log(currentUser.name);
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
         location = 'login.html';
     })

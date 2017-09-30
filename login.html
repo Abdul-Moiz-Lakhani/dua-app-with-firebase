@@ -27,7 +27,7 @@
     };
     firebase.initializeApp(config);
   </script>
-  
+
   <title>Dua App</title>
 </head>
 
@@ -56,17 +56,17 @@
     </div>
   </nav>
 
-  <div id="form-container-div">
-    <!-- Jumbotron -->
-    <div class="jumbotron text-center">
-      <h1 class="display-3">LET'S DO DUA</h1>
-      <p class="lead jumbotron-para">Among the beauties of Islam is that you make Dua for your Brothers and Sisters in Islam without knowing them
-        <br class="breakLineOff"> and in return the angels make Dua for You</p>
-      <hr class="my-4">
-      <p class="jumbotron-para2">An Free Online Platform To Make Dua For The People Who Need Your Kind Words</p>
-    </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1 class="display-3">LET'S DO DUA</h1>
+    <p class="lead jumbotron-para">Among the beauties of Islam is that you make Dua for your Brothers and Sisters in Islam without knowing them
+      <br class="breakLineOff"> and in return the angels make Dua for You</p>
+    <hr class="my-4">
+    <p class="jumbotron-para2">An Free Online Platform To Make Dua For The People Who Need Your Kind Words</p>
+  </div>
 
-    <!-- Sign In Form -->
+  <!-- Sign In Form -->
+  <div id="form-container-div">
     <div id="signInFormContainer" class="container">
       <form action="javascript:void(0)">
         <legend>SIGN IN</legend>
@@ -79,10 +79,10 @@
           <label for="signInPass">Password</label>
           <input type="password" class="form-control" id="signInPass" placeholder="Password">
         </div>
-        <button id="wantNewAccountBtn" type="button" class="btn btn-primary optionalFormBtn" onclick="location = 'signUp.html'">I WANT TO CREATE AN ACCOUNT</button>
+        <button id="wantNewAccountBtn" type="button" class="btn btn-primary optionalFormBtn" onclick="location = 'signUp.html'">I WANT NEW ACCOUNT</button>
         <button id="signInBtn" type="submit" onclick="login()" class="btn btn-primary float-right">SIGN IN</button>
+      </form>
     </div>
-    </form>
   </div>
 
   <!-- Footer -->

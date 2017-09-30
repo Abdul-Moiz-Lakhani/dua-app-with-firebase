@@ -2,12 +2,15 @@ var user = JSON.parse(localStorage.getItem('currentUser'));
 var sender = document.getElementById('sender');
 var comment = document.getElementById('commentBox');
 var welcomeTag = document.getElementById('welcome');
+var userEmailAdd = document.getElementById('userEmailAddress');
 var database = firebase.database().ref();
 
-welcomeTag.innerHTML = "Welcome " + user.name;
+var userName = string => string.charAt(0).toUpperCase() + string.slice(1);
 
+welcomeTag.innerHTML = userName(user.name);
+userEmailAdd.innerHTML = user.email;
 
-function submit(){
+function submit() {
     var post = {
         sender: sender.value,
         dua: comment.value
@@ -16,4 +19,15 @@ function submit(){
     comment.value = '';
 
     database.child('posts').push(post);
+}
+
+function signOut() {
+    firebase.auth().signOut()
+        .then(function () {
+            console.log("Signed Out");
+            location = "index.html";
+        })
+        .catch(function (error) {
+            console.log(error)
+        });
 }
