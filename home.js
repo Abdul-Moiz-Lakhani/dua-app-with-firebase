@@ -5,6 +5,11 @@ var welcomeTag = document.getElementById('welcome');
 var userEmailAdd = document.getElementById('userEmailAddress');
 var database = firebase.database().ref();
 
+if(localStorage.getItem('currentUser') === null)
+{
+    location = "login.html";
+}
+
 var userName = string => string.charAt(0).toUpperCase() + string.slice(1);
 
 welcomeTag.innerHTML = userName(user.name);

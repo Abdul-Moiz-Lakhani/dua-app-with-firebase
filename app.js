@@ -6,6 +6,15 @@ var nameInput = document.getElementById("UserNameInput");
 var database = firebase.database();
 var auth = firebase.auth();
 
+if(localStorage.getItem('currentUser') === null)
+{
+    
+}
+else
+{
+    location = "home.html";
+}
+
 function signUp() {
     var email = emailInput.value;
     var password = passwordInput.value;
