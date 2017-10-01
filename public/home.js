@@ -10,7 +10,7 @@ var userAuth =
     authenticated: localStorage.getItem('authentication')
 }
 
-if(localStorage.getItem('authentication') === "false")
+if(localStorage.getItem('authentication') === "false" || localStorage.getItem('authentication') === null)
 {
     location = "login.html";
 }
