@@ -6,6 +6,8 @@ var nameInput = document.getElementById("UserNameInput");
 var database = firebase.database();
 var auth = firebase.auth();
 
+localStorage.setItem('authentication', false);
+
 var userAuth = 
 {
     authenticated: localStorage.getItem('authentication')
