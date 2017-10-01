@@ -28,7 +28,7 @@
     firebase.initializeApp(config);
   </script>
 
-  <title>Dua App</title>
+  <title>Dua App - Sign In Page</title>
 </head>
 
 <body>
@@ -68,19 +68,19 @@
   <!-- Sign In Form -->
   <div id="form-container-div">
     <div id="signInFormContainer" class="container">
-      <form action="javascript:void(0)">
+      <form onsubmit="login()" action="javascript:void(0)">
         <legend>SIGN IN</legend>
         <div class="form-group">
           <label for="signInEmail">Email Address</label>
-          <input type="email" class="form-control" id="signInEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+          <input type="email" class="form-control" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Sign In Error" data-content="Incorrect Email or Password" id="signInEmail" aria-describedby="emailHelp" placeholder="Enter Email" required autofocus>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="signInPass">Password</label>
-          <input type="password" class="form-control" id="signInPass" placeholder="Password">
+          <input type="password" class="form-control" id="signInPass" placeholder="Password" required>
         </div>
         <button id="wantNewAccountBtn" type="button" class="btn btn-primary optionalFormBtn" onclick="location = 'signUp.html'">I WANT NEW ACCOUNT</button>
-        <button id="signInBtn" type="submit" onclick="login()" class="btn btn-primary float-right">SIGN IN</button>
+        <button id="signInBtn" type="submit" class="btn btn-primary float-right">SIGN IN</button>
       </form>
     </div>
   </div>

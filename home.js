@@ -18,14 +18,14 @@ function submit() {
     }
     sender.value = '';
     comment.value = '';
-    
+
     database.child('posts').push(post);
 }
 
 function signOut() {
     firebase.auth().signOut()
         .then(function () {
-            console.log("Signed Out");
+            localStorage.removeItem('currentUser');
             location = "index.html";
         })
         .catch(function (error) {

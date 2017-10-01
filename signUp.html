@@ -68,23 +68,23 @@
 
     <!-- Sign Up Form -->
     <div id="signUpFormContainer" class="container">
-      <form action="javascript:void(0)">
+      <form onsubmit="signUp()" action="javascript:void(0)">
         <legend>SIGN UP</legend>
         <div class="form-group">
           <label for="UserNameInput">User Name</label>
-          <input type="text" class="form-control" id="UserNameInput" placeholder="Enter Your Name">
+          <input type="text" class="form-control" id="UserNameInput" placeholder="Enter Your Name" required autofocus>
         </div>
         <div class="form-group">
           <label for="signUpEmail">Email Address</label>
-          <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+          <input type="email" class="form-control" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Sign Up Error" id="signUpEmail" aria-describedby="emailHelp" placeholder="Enter Email" required>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="signUpPass">Password</label>
-          <input type="password" class="form-control" id="signUpPass" placeholder="Password">
+          <input type="password" class="form-control" id="signUpPass" placeholder="Password" required>
         </div>
         <button id="alreadyAccountBtn" type="button" class="btn btn-primary optionalFormBtn" onclick="location = 'login.html'">I ALREADY HAVE AN ACCOUNT</button>
-        <button id="signUpBtn" type="submit" onclick="signUp()" class="btn btn-primary float-right">SIGN UP</button>
+        <button id="signUpBtn" type="submit" class="btn btn-primary float-right">SIGN UP</button>
     </div>
     </form>
   </div>
