@@ -5,7 +5,12 @@ var welcomeTag = document.getElementById('welcome');
 var userEmailAdd = document.getElementById('userEmailAddress');
 var database = firebase.database().ref();
 
-if(localStorage.getItem('currentUser') === null)
+var userAuth = 
+{
+    authenticated: localStorage.getItem('authentication')
+}
+
+if(localStorage.getItem('authentication') === "false")
 {
     location = "login.html";
 }
@@ -31,6 +36,8 @@ function signOut() {
     firebase.auth().signOut()
         .then(function () {
             localStorage.removeItem('currentUser');
+            userAuth.authenticated = false;
+            localStorage.setItem('authentication', userAuth.authenticated);
             location = "index.html";
         })
         .catch(function (error) {

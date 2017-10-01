@@ -6,11 +6,12 @@ var nameInput = document.getElementById("UserNameInput");
 var database = firebase.database();
 var auth = firebase.auth();
 
-if(localStorage.getItem('currentUser') === null)
+var userAuth = 
 {
-    
+    authenticated: localStorage.getItem('authentication')
 }
-else
+
+if(localStorage.getItem('authentication') === "true")
 {
     location = "home.html";
 }
@@ -77,6 +78,8 @@ function login() {
                 if(localStorage.getItem('currentUser') === null)
                 {
                     localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    userAuth.authenticated = true;
+                    localStorage.setItem('authentication', userAuth.authenticated);
                     location = 'home.html';
                 }
                 else

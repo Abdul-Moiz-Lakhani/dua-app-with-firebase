@@ -29,7 +29,14 @@
     firebase.initializeApp(config);
   </script>
 
-  <script src="authenticationLogic.js"></script>
+  <script>
+    if (localStorage.getItem('currentUser') === null) {
+
+    }
+    else {
+      location = "home.html";
+    }
+  </script>
   <title>Dua App</title>
 </head>
 
