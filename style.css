@@ -308,6 +308,21 @@ legend
         color: deepskyblue;
     }
 
+    #navbarLinks > ul > li
+    {
+        margin-top: 15px;
+    }
+
+    #navbarLinks > ul > li > a
+    {
+        text-align: center;
+    }
+
+    .SignOutBtnStyles
+    {
+        width: 100%;
+    }
+
     .display-3
     {
         top: 12.5%;
@@ -466,6 +481,21 @@ legend
         color: deepskyblue;
     }
 
+    #navbarLinks > ul > li
+    {
+        margin-top: 15px;
+    }
+
+    #navbarLinks > ul > li > a
+    {
+        text-align: center;
+    }
+
+    .SignOutBtnStyles
+    {
+        width: 100%;
+    }
+
     .display-3
     {
         top: 20%;
@@ -578,6 +608,12 @@ legend
         font-size: 4vw;
     }
 
+    .btnStyles > a
+    {
+        color: deepskyblue;
+        margin-top: 10px !important;
+    }
+
     /* Sign In Form */
     #signInFormContainer
     {
@@ -628,6 +664,22 @@ legend
     .btnStyles > a
     {
         margin-top: 10px;
+    }
+
+    #navbarLinks > ul > li
+    {
+        margin-top: 15px;
+    }
+
+    #navbarLinks > ul > li > a
+    {
+        text-align: center;
+    }
+
+    .SignOutBtnStyles
+    {
+        margin-top: 10px !important;
+        width: 100%;
     }
 
     .jumbotron
